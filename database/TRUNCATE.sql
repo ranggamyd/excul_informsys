@@ -1,0 +1,9 @@
+TRUNCATE TABLE `si_eskul`.`tbl_absensi`;
+TRUNCATE TABLE `si_eskul`.`tbl_eskul`;
+TRUNCATE TABLE `si_eskul`.`tbl_jadwal`;
+TRUNCATE TABLE `si_eskul`.`tbl_kartu`;
+TRUNCATE TABLE `si_eskul`.`tbl_nilai`;
+TRUNCATE TABLE `si_eskul`.`tbl_pendaftaran`;
+TRUNCATE TABLE `si_eskul`.`tbl_pengumuman`;
+TRUNCATE TABLE `si_eskul`.`tbl_prestasi`;
+TRUNCATE TABLE `si_eskul`.`tbl_siswa`;
