@@ -23,6 +23,7 @@ class Siswa_model extends CI_Model
 
         $config['upload_path']    = './assets/img/siswa';
         $config['allowed_types']  = 'jpg|png|jpeg';
+        $config['max_size'] = 2048;
 
         $this->load->library('upload', $config);
 
@@ -79,6 +80,7 @@ class Siswa_model extends CI_Model
 
         $config['upload_path']    = './assets/img/siswa';
         $config['allowed_types']  = 'jpg|png|jpeg';
+        $config['max_size'] = 2048;
 
         $this->load->library('upload', $config);
 

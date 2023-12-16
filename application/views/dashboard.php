@@ -167,6 +167,7 @@
             }
         });
         $("#presenceForm").submit();
+        html5QrcodeScanner.clear();
     }
 
     function onScanFailure(error) {
