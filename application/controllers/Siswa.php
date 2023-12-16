@@ -37,6 +37,7 @@ class Siswa extends CI_Controller
     {
         $this->form_validation->set_rules('nis', 'NIS', 'is_unique[tbl_siswa.nis]');
         $this->form_validation->set_rules('username', 'Username', 'is_unique[users.username]');
+        $this->form_validation->set_rules('foto', 'Foto', 'is_image|max_size[2048]');
 
         if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata('gagal', 'Gagal Menambahkan Siswa !');
@@ -70,6 +71,7 @@ class Siswa extends CI_Controller
         $this->form_validation->set_rules('nis', 'NIS', 'required');
         if ($this->input->post('nis') != $siswa->nis) $this->form_validation->set_rules('nis', 'NIS', 'is_unique[tbl_siswa.nis]');
         if ($this->input->post('username') != $user->username) $this->form_validation->set_rules('username', 'Username', 'is_unique[users.username]');
+        if ($this->input->post('foto')) $this->form_validation->set_rules('foto', 'Foto', 'is_image|max_size[2048]');
 
         if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata('gagal', 'Gagal Mengubah Siswa !');
