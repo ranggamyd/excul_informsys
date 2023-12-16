@@ -133,7 +133,7 @@
                 <?= form_error('agama') ?>
               </div>
               <label for="no_hp">No. HP Orang Tua:</label>
-              <input type="text" name="no_hp" value="<?= set_value('no_hp') ?>" class="form-control mb-3 <?= form_error('no_hp') ? 'is-invalid' : '' ?>" id="no_hp">
+              <input type="text" name="no_hp" value="<?= set_value('no_hp') ?>" class="form-control mb-3 <?= form_error('no_hp') ? 'is-invalid' : '' ?>" id="no_hp" required>
               <div id='no_hp' class='invalid-feedback'>
                 <?= form_error('no_hp') ?>
               </div>
@@ -254,7 +254,7 @@
                   <?= form_error('agama') ?>
                 </div>
                 <label for="no_hp">No. HP Orang Tua:</label>
-                <input type="text" name="no_hp" value="<?= set_value('no_hp', $item['no_hp']) ?>" class="form-control mb-3 <?= form_error('no_hp') ? 'is-invalid' : '' ?>" id="no_hp">
+                <input type="text" name="no_hp" value="<?= set_value('no_hp', $item['no_hp']) ?>" class="form-control mb-3 <?= form_error('no_hp') ? 'is-invalid' : '' ?>" id="no_hp" required>
                 <div id='no_hp' class='invalid-feedback'>
                   <?= form_error('no_hp') ?>
                 </div>
