@@ -36,7 +36,7 @@
                     <?php
                     $pendaftar = $this->db->get_where('tbl_pendaftaran', ['id_siswa' => $this->session->userdata('id_siswa'), 'id_eskul' => $item['id_eskul']])->row();
                     $able_join = 0;
-                    if ($pendaftar && ($pendaftar->status != 'diterima')) $able_join = 1;
+                    if (!$pendaftar || ($pendaftar->status != 'diterima')) $able_join = 1;
                     ?>
                     <button class="btn btn-primary" <?= $able_join ? '' : 'disabled' ?> data-toggle="modal" data-target="#join_eskul-<?= $item['id_eskul'] ?>" data-toggle="tooltip" data-placement="right" title="Klik untuk bergabung"><i class="fa-fw fas fa-door-open mr-2"></i>Gabung</button>
                   <?php
