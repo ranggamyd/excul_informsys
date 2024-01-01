@@ -96,8 +96,7 @@
                 <option value="" selected disabled></option>
                 <option value="admin" <?= set_select('role', 'admin'); ?>>admin</option>
                 <option value="pembina" <?= set_select('role', 'pembina'); ?>>pembina</option>
-                <option value="wakasek" <?= set_select('role', 'wakasek'); ?>>wakasek</option>
-                <option value="kesiswaan" <?= set_select('role', 'kesiswaan'); ?>>kesiswaan</option>
+                <option value="wakasek" <?= set_select('role', 'wakasek'); ?>>wakasek kesiswaan</option>
               </select>
               <div id='role' class='invalid-feedback'>
                 <?= form_error('role') ?>
@@ -166,8 +165,7 @@
                   <option value="" selected disabled></option>
                   <option value="admin" <?= set_select('role', 'admin', $item['role'] == 'admin' ? TRUE : FALSE); ?>>admin</option>
                   <option value="pembina" <?= set_select('role', 'pembina', $item['role'] == 'pembina' ? TRUE : FALSE); ?>>pembina</option>
-                  <option value="wakasek" <?= set_select('role', 'wakasek', $item['role'] == 'wakasek' ? TRUE : FALSE); ?>>wakasek</option>
-                  <option value="kesiswaan" <?= set_select('role', 'kesiswaan', $item['role'] == 'kesiswaan' ? TRUE : FALSE); ?>>kesiswaan</option>
+                  <option value="wakasek" <?= set_select('role', 'wakasek', $item['role'] == 'wakasek' ? TRUE : FALSE); ?>>wakasek kesiswaan</option>
                 </select>
                 <div id='role' class='invalid-feedback'>
                   <?= form_error('role') ?>

@@ -64,7 +64,7 @@
       </div>
       <form action="<?= base_url('jadwal/tambah') ?>" method="post">
         <div class="modal-body">
-          <label for="id_eskul">Nama Ekstrakulikuler :</label>
+          <label for="id_eskul">Nama Ekstrakurikuler :</label>
           <select name="id_eskul" id="id_eskul" class="form-control mb-3 <?= form_error('id_eskul') ? 'is-invalid' : '' ?>" required>
             <option value="" selected disabled></option>
             <?php foreach ($eskul as $item) { ?>
@@ -129,7 +129,7 @@
         <form action="<?= base_url('jadwal/ubah') ?>" method="post">
           <input type="hidden" name="id_jadwal" value="<?= $item['id_jadwal'] ?>">
           <div class="modal-body">
-            <label for="id_eskul">Jenis Ekstrakulikuler :</label>
+            <label for="id_eskul">Jenis Ekstrakurikuler :</label>
             <select name="id_eskul" id="id_eskul" class="form-control mb-3 <?= form_error('id_eskul') ? 'is-invalid' : '' ?>" required>
               <option value="" selected disabled></option>
               <?php foreach ($eskul as $i) { ?>

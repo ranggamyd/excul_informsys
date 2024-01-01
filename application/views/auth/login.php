@@ -5,13 +5,13 @@
                 <div class="card-body p-0">
                     <div class="row">
                         <div class="col-lg-6 d-none d-lg-block">
-                            <img src="<?= base_url('assets/img/logo.png') ?>" alt="MU Logo" class="w-100 h-100 p-5">
+                            <img src="<?= base_url('assets/img/logo_smk_mu.png') ?>" alt="MU Logo" class="w-100 h-100 p-5">
                         </div>
                         <div class="col-lg-6 d-flex align-items-center w-100">
                             <div class="p-5 flex-grow-1">
                                 <div class="text-center">
                                     <h1 class="h3 text-gray-900 mb-1">Selamat Datang !</h1>
-                                    <p class="h6 text-gray-900 mb-4">Di Sistem Informasi Ekstrakulikuler SMK Manbaul Ulum Cirebon</p>
+                                    <p class="h6 text-gray-900 mb-4">Di Sistem Informasi Ekstrakurikuler SMK Manbaul Ulum Cirebon</p>
                                 </div>
                                 <form action="<?= base_url('auth/login') ?>" method="POST" class="user">
                                     <div class="form-group">

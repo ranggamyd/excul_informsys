@@ -31,7 +31,7 @@ class Eskul extends CI_Controller
     $data['guru'] = $this->guru_model->semua_guru();
     $data['eskul'] = $this->eskul_model->semua_eskul();
 
-    $data['title'] = 'Data Ekstrakulikuler';
+    $data['title'] = 'Data Ekstrakurikuler';
     $this->loadView('eskul', $data);
   }
 
@@ -40,15 +40,15 @@ class Eskul extends CI_Controller
     $this->form_validation->set_rules('nama_eskul', 'Nama Eskul', 'is_unique[tbl_eskul.nama_eskul]');
 
     if ($this->form_validation->run() == FALSE) {
-      $this->session->set_flashdata('gagal', 'Gagal Menambahkan Ekstrakulikuler !');
+      $this->session->set_flashdata('gagal', 'Gagal Menambahkan Ekstrakurikuler !');
       $this->session->set_flashdata('hasModalID', 'tambah_eskul');
       $this->index();
     } else {
       if ($this->eskul_model->tambah_eskul()) {
-        $this->session->set_flashdata('sukses', 'Berhasil Menambahkan Ekstrakulikuler !');
+        $this->session->set_flashdata('sukses', 'Berhasil Menambahkan Ekstrakurikuler !');
         redirect('eskul');
       } else {
-        $this->session->set_flashdata('gagal', 'Gagal Menambahkan Ekstrakulikuler !');
+        $this->session->set_flashdata('gagal', 'Gagal Menambahkan Ekstrakurikuler !');
         $this->index();
       }
     }
@@ -63,15 +63,15 @@ class Eskul extends CI_Controller
     if ($this->input->post('nama_eskul') != $eskul->nama_eskul) $this->form_validation->set_rules('nama_eskul', 'Nama Eskul', 'is_unique[tbl_eskul.nama_eskul]');
 
     if ($this->form_validation->run() == FALSE) {
-      $this->session->set_flashdata('gagal', 'Gagal Mengubah Ekstrakulikuler !');
+      $this->session->set_flashdata('gagal', 'Gagal Mengubah Ekstrakurikuler !');
       $this->session->set_flashdata('hasModalID', 'edit_eskul-' . $id_eskul);
       $this->index();
     } else {
       if ($this->eskul_model->ubah_eskul()) {
-        $this->session->set_flashdata('sukses', 'Berhasil Mengubah Ekstrakulikuler !');
+        $this->session->set_flashdata('sukses', 'Berhasil Mengubah Ekstrakurikuler !');
         redirect('eskul');
       } else {
-        $this->session->set_flashdata('gagal', 'Gagal Mengubah Ekstrakulikuler !');
+        $this->session->set_flashdata('gagal', 'Gagal Mengubah Ekstrakurikuler !');
         $this->index();
       }
     }
@@ -80,10 +80,10 @@ class Eskul extends CI_Controller
   public function hapus($id_eskul)
   {
     if ($this->eskul_model->hapus_eskul($id_eskul)) {
-      $this->session->set_flashdata('sukses', 'Berhasil Menghapus Ekstrakulikuler !');
+      $this->session->set_flashdata('sukses', 'Berhasil Menghapus Ekstrakurikuler !');
       redirect('eskul');
     } else {
-      $this->session->set_flashdata('gagal', 'Gagal Menghapus Ekstrakulikuler !');
+      $this->session->set_flashdata('gagal', 'Gagal Menghapus Ekstrakurikuler !');
       $this->index();
     }
   }

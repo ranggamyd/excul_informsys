@@ -15,7 +15,7 @@
                         <tr>
                             <th class="text-center">No.</th>
                             <th>Nama Siswa</th>
-                            <th>Nama Ekstrakulikuler</th>
+                            <th>Nama Ekstrakurikuler</th>
                             <th>Skor</th>
                             <?php if ($this->session->userdata('login_as') != 'siswa') : ?>
                                 <th>Opsi</th>
@@ -70,7 +70,7 @@
                     <div id='id_siswa' class='invalid-feedback'>
                         <?= form_error('id_siswa') ?>
                     </div>
-                    <label for="id_eskul">Nama Ekstrakulikuler :</label>
+                    <label for="id_eskul">Nama Ekstrakurikuler :</label>
                     <select name="id_eskul" id="id_eskul" class="form-control mb-3 <?= form_error('id_eskul') ? 'is-invalid' : '' ?>" required>
                         <option value="" selected disabled></option>
                         <?php foreach ($eskul as $item) { ?>
@@ -119,7 +119,7 @@
                         <div id='id_siswa' class='invalid-feedback'>
                             <?= form_error('id_siswa') ?>
                         </div>
-                        <label for="id_eskul">Nama Ekstrakulikuler :</label>
+                        <label for="id_eskul">Nama Ekstrakurikuler :</label>
                         <select name="id_eskul" id="id_eskul" class="form-control mb-3 <?= form_error('id_eskul') ? 'is-invalid' : '' ?>" required>
                             <option value="" selected disabled></option>
                             <?php foreach ($eskul as $i) { ?>

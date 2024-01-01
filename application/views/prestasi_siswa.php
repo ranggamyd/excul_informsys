@@ -7,8 +7,8 @@
     </div>
 
     <!-- Content Row -->
-    <h1 class="h3 mb-1 font-weight-bold text-center text-gray-800">Prestasi Ekstrakulikuler</h1>
-    <h1 class="h5 mb-0 text-center text-gray-800">Berikut adalah prestasi ekstrakulikuler yang diperoleh di SMK Manbaul Ulum Cirebon</h1>
+    <h1 class="h3 mb-1 font-weight-bold text-center text-gray-800">Prestasi Ekstrakurikuler</h1>
+    <h1 class="h5 mb-0 text-center text-gray-800">Berikut adalah prestasi ekstrakurikuler yang diperoleh di SMK Manbaul Ulum Cirebon</h1>
     <p class="text-center text-gray-800">Jl. Nyi Ageng Serang No.07, Cikeduk, Kec. Depok, Kabupaten Cirebon, Jawa Barat 45652</p>
     <hr class="w-25">
 
@@ -23,7 +23,7 @@
             <div class="col-12">
                 <div class="card border-left-primary">
                     <div class="card-header py-3">
-                        <h5 class="m-0 font-weight-bold text-center text-uppercase">Ekstrakulikuler <?= $item['nama_eskul'] ?></h5>
+                        <h5 class="m-0 font-weight-bold text-center text-uppercase">Ekstrakurikuler <?= $item['nama_eskul'] ?></h5>
                     </div>
                     <div class="card-body px-md-5">
                         <div class="row">

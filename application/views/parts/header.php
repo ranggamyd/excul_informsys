@@ -33,7 +33,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('dashboard') ?>">
                 <div class="sidebar-brand-icon">
-                    <img src="<?= base_url('assets') ?>/img/logo.png" width="40">
+                    <img src="<?= base_url('assets') ?>/img/logo_smk_mu.png" width="50">
                 </div>
                 <div class="sidebar-brand-text mx-3">SI Eskul</div>
             </a>
@@ -66,7 +66,7 @@
                 <li class="nav-item <?= ($this->uri->segment(1) == 'eskul') ? 'active' : ''; ?>">
                     <a class="nav-link py-2" href="<?= base_url('eskul') ?>">
                         <i class="fa-fw fas fa-chart-line"></i>
-                        <span>Data Ekstrakulikuler</span>
+                        <span>Data Ekstrakurikuler</span>
                     </a>
                 </li>
                 <li class="nav-item <?= ($this->uri->segment(1) == 'pendaftar') ? 'active' : ''; ?>">
@@ -171,7 +171,7 @@
                 <li class="nav-item <?= ($this->uri->segment(1) == 'eskul') ? 'active' : ''; ?>">
                     <a class="nav-link py-2" href="<?= base_url('eskul') ?>">
                         <i class="fa-fw fas fa-chart-line"></i>
-                        <span>Ekstrakulikuler</span>
+                        <span>Ekstrakurikuler</span>
                     </a>
                 </li>
                 <li class="nav-item <?= ($this->uri->segment(1) == 'jadwal') ? 'active' : ''; ?>">

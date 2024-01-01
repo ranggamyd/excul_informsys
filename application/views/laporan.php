@@ -6,7 +6,7 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" id="recap-list" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#eskul" role="tab" aria-controls="eskul" aria-selected="true">Ekstrakulikuler</a>
+                    <a class="nav-link active" href="#eskul" role="tab" aria-controls="eskul" aria-selected="true">Ekstrakurikuler</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#guru" role="tab" aria-controls="guru" aria-selected="false">Guru</a>
@@ -30,7 +30,7 @@
         </div>
         <div class="card-body">
             <h4 class="card-title">Rekap Data Laporan</h4>
-            <h6 class="card-subtitle mb-2">Berikut ini merupakan rekap data ekstrakulikuler yang terdapat di SMK Manbaul Ulum Cirebon</h6>
+            <h6 class="card-subtitle mb-2">Berikut ini merupakan rekap data ekstrakurikuler yang terdapat di SMK Manbaul Ulum Cirebon</h6>
 
             <div class="tab-content mt-3">
                 <div class="tab-pane active" id="eskul" role="tabpanel">
@@ -39,7 +39,7 @@
                             <thead>
                                 <tr class="text-center">
                                     <th class="text-center">No.</th>
-                                    <th>Nama Ekstrakulikuler</th>
+                                    <th>Nama Ekstrakurikuler</th>
                                     <th>Ketua</th>
                                     <th>Pembina</th>
                                     <th>Kesiswaan</th>
@@ -196,7 +196,7 @@
                                 <tr>
                                     <th class="text-center">No.</th>
                                     <th>Nama Siswa</th>
-                                    <th>Nama Ekstrakulikuler</th>
+                                    <th>Nama Ekstrakurikuler</th>
                                     <th>Foto</th>
                                     <th>Deskripsi</th>
                                 </tr>
@@ -228,7 +228,7 @@
                                 <tr>
                                     <th class="text-center">No.</th>
                                     <th>Nama Siswa</th>
-                                    <th>Nama Ekstrakulikuler</th>
+                                    <th>Nama Ekstrakurikuler</th>
                                     <th>Skor</th>
                                 </tr>
                             </thead>

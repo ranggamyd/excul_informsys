@@ -8,7 +8,7 @@
 
     <!-- Content Row -->
     <h1 class="h3 mb-1 font-weight-bold text-center text-gray-800">Daftar Pengumuman</h1>
-    <h1 class="h5 mb-0 text-center text-gray-800">Berikut ini pengumuman terkait ekstrakulikuler di SMK Manbaul Ulum Cirebon</h1>
+    <h1 class="h5 mb-0 text-center text-gray-800">Berikut ini pengumuman terkait ekstrakurikuler di SMK Manbaul Ulum Cirebon</h1>
     <p class="text-center text-gray-800">Jl. Nyi Ageng Serang No.07, Cikeduk, Kec. Depok, Kabupaten Cirebon, Jawa Barat 45652</p>
     <hr class="w-25">
 

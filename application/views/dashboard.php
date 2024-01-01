@@ -8,7 +8,7 @@
 
     <!-- Content Row -->
     <h1 class="h3 mb-1 font-weight-bold text-center text-gray-800">SELAMAT DATANG</h1>
-    <h1 class="h5 mb-0 text-center text-gray-800">Di Sistem Informasi Ekstrakulikuler SMK Manbaul Ulum Cirebon</h1>
+    <h1 class="h5 mb-0 text-center text-gray-800">Di Sistem Informasi Ekstrakurikuler SMK Manbaul Ulum Cirebon</h1>
     <p class="text-center text-gray-800">Jl. Nyi Ageng Serang No.07, Cikeduk, Kec. Depok, Kabupaten Cirebon, Jawa Barat 45652</p>
 
     <?php if ($this->session->userdata('login_as') == 'admin') { ?>
@@ -19,7 +19,7 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    Data Ekstrakulikuler</div>
+                                    Data Ekstrakurikuler</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $jml_eskul ?></div>
                             </div>
                             <div class="col-auto">

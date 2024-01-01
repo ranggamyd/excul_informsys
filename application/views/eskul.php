@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h1 class="h3 mb-2 text-gray-800">Data Ekstrakulikuler</h1>
+  <h1 class="h3 mb-2 text-gray-800">Data Ekstrakurikuler</h1>
   <hr>
 
   <div class="card shadow mb-4">
@@ -14,7 +14,7 @@
           <thead>
             <tr class="text-center">
               <th class="text-center">No.</th>
-              <th>Nama Ekstrakulikuler</th>
+              <th>Nama Ekstrakurikuler</th>
               <th>Ketua</th>
               <th>Pembina</th>
               <th>Kesiswaan</th>
@@ -201,7 +201,7 @@
           <input type="hidden" name="id_siswa" value="<?= $this->session->userdata('id_siswa') ?>">
           <input type="hidden" name="tanggal" value="<?= date('Y-m-d') ?>">
           <div class="modal-body">
-            <h6 class="text-center">Apakah anda yakin ingin bergabung dengan Ekstrakulikuler <strong><?= $item['nama_eskul'] ?></strong>?</h6>
+            <h6 class="text-center">Apakah anda yakin ingin bergabung dengan Ekstrakurikuler <strong><?= $item['nama_eskul'] ?></strong>?</h6>
 
           </div>
           <div class="modal-footer">
