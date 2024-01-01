@@ -3,6 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <button type="button" onclick="history.back()" class="btn btn-success mt-3"><i class="fa-fw fas fa-arrow-left mr-2"></i> Kembali</button>
         <!-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> -->
     </div>
 

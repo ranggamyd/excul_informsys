@@ -16,6 +16,7 @@
         <h4 class="text-center"><?= $siswa->nis ?></h4>
         <p class="text-center mb-4"><?= $siswa->nama ?></p>
       </div>
+      <button type="button" onclick="history.back()" class="btn btn-success mt-3"><i class="fa-fw fas fa-arrow-left mr-2"></i> Kembali</button>
     </div>
     <div class="col-md-8">
       <div class="card shadow mb-3">

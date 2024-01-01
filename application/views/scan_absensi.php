@@ -39,8 +39,11 @@
                 </div>
             </div>
             <div class="card-footer">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="card">Batal</button>
-                <input type="submit" value="Simpan" class="btn btn-success">
+                <button type="button" onclick="history.back()" class="btn btn-success mt-3"><i class="fa-fw fas fa-arrow-left mr-2"></i> Kembali</button>
+                <div class="float-right">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="card">Batal</button>
+                    <input type="submit" value="Simpan" class="btn btn-success">
+                </div>
             </div>
         </form>
     </div>
