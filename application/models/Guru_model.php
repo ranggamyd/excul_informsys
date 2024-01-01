@@ -44,14 +44,11 @@ class Guru_model extends CI_Model
 
         if (!$this->db->update('tbl_guru', $guru, ['id_guru' => $id_guru])) return FALSE;
 
-        $user = [
-            'username' => $this->input->post('username'),
-            'id_admin' => $id_guru,
-        ];
+        $user = ['username' => $this->input->post('username')];
 
         if ($this->input->post('password')) $user['password'] = md5($this->input->post('password'));
 
-        if ($this->db->insert('users', $user)) return TRUE;
+        if ($this->db->update('users', $user, ['id_admin' => $id_guru])) return TRUE;
     }
 
     public function hapus_guru($id_guru)

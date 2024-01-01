@@ -29,7 +29,7 @@ class Whatsapp_notification
                 'countryCode' => '62',
             ),
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Sii-fsoZJZqAunwjPmoL'
+                'Authorization: T-T-YrG-Agzj9nC3vnPC'
             ),
         ));
 
