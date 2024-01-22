@@ -16,6 +16,40 @@
         <h4 class="text-center"><?= $siswa->nis ?></h4>
         <p class="text-center mb-4"><?= $siswa->nama ?></p>
       </div>
+      <div class="card shadow mt-3">
+        <?php 
+        $this->db->join('tbl_eskul', 'tbl_eskul.id_eskul = tbl_pendaftaran.id_eskul', 'left');
+        $eskul = $this->db->get_where('tbl_pendaftaran', ['id_siswa' => $siswa->id_siswa])->result_array(); 
+        ?>
+        <div class="card-body">
+          <h4 class="bg-light px-3 font-weight-bold">Ekstrakulikuler yang diikuti</h4>
+          <div class="table-responsive">
+            <table class="table border-bottom">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Ekstrakulikuler</th>
+                  <th>Tanggal Daftar</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                $i = 1;
+                foreach ($eskul as $item) :
+                ?>
+                  <tr>
+                    <td><?= $i++ ?></td>
+                    <td><?= $item['nama_eskul'] ?></td>
+                    <td><?= $item['tanggal'] ?></td>
+                    <td><?= $item['status'] ?></td>
+                  </tr>
+                <?php endforeach ?>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
       <button type="button" onclick="history.back()" class="btn btn-success mt-3"><i class="fa-fw fas fa-arrow-left mr-2"></i> Kembali</button>
     </div>
     <div class="col-md-8">
