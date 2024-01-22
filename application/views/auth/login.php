@@ -29,7 +29,7 @@
                                     <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
                                     <!-- <hr> -->
                                 </form>
-                                <!-- <a class="small" href="#">Lupa Password?</a> -->
+                                <span class="float-right mt-2">Lupa Password? <a class="btn btn-link text-success" href="https://wa.me/089661499402"><i class="fab fa-whatsapp mr-2"></i>Hubungi Admin</a></span>
                                 <!-- <a class="small float-right" href="<?= base_url('auth/register') ?>">Belum punya akun?</a> -->
                             </div>
                         </div>
