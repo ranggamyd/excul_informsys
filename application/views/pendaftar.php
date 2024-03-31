@@ -16,6 +16,7 @@
               <th class="text-center">No.</th>
               <th>Nama Pendaftar</th>
               <th>NIS</th>
+              <th>WhatsApp</th>
               <th>Jenis Ekstrakurikuler</th>
               <th>Tanggal Daftar</th>
               <th>Status</th>
@@ -30,10 +31,27 @@
                 <td class="text-center"><?= $no++ ?></td>
                 <td class=""><?= $item['nama'] ?></td>
                 <td class="text-center"><?= $item['nis'] ?></td>
+                <td class="text-center">
+                  <?php if ($item['no_hp']) { ?>
+                    <?php
+                    $no_hp = $item['no_hp'];
+                    $no_hp_clean = preg_replace('/\D/', '', $no_hp);
+                    if (substr($no_hp_clean, 0, 2) == "08") {
+                      $no_hp_clean = "62" . substr($no_hp_clean, 1);
+                    } elseif (substr($no_hp_clean, 0, 1) != "6") {
+                      $no_hp_clean = "62" . $no_hp_clean;
+                    }
+                    $whatsapp_url = "https://wa.me/" . $no_hp_clean;
+                    echo '<a class="btn btn-link text-success" target="__blank" href="' . $whatsapp_url . '"><i class="fab fa-whatsapp mr-2"></i>' . $no_hp . '</a>';
+                    ?>
+                  <?php } else { ?>
+                    -
+                  <?php } ?>
+                </td>
                 <td class=""><?= $item['nama_eskul'] ?></td>
                 <td class="text-center"><?= date('d M Y', strtotime($item['tanggal'])) ?></td>
                 <td class="text-center"><?= $item['status'] ?></td>
-                <td class="text-center">
+                <td class="text-center" style="min-width: 300px;">
                   <div class="btn-group" role="group" aria-label="Opsi">
                     <a href="<?= base_url('pendaftar/terima/') . $item['id_pendaftaran'] ?>" class="btn btn-success <?= $item['status'] == 'diterima' ? 'disabled' : '' ?>" onclick="return confirm('Apakah anda yakin?')"><i class="fa-fw far fa-check-circle mr-2"></i>Terima</a>
                     <a href="<?= base_url('pendaftar/tolak/') . $item['id_pendaftaran'] ?>" class="btn btn-danger <?= $item['status'] == 'ditolak' ? 'disabled' : '' ?>" onclick="return confirm('Apakah anda yakin?')"><i class="fa-fw far fa-times-circle mr-2"></i>Tolak</a>

@@ -15,6 +15,7 @@ class Pengumuman_model extends CI_Model
         $data = [
             'judul' => $this->input->post('judul'),
             'isi_pengumuman' => $this->input->post('isi_pengumuman'),
+            'tanggal' => $this->input->post('tanggal'),
         ];
 
         if ($this->db->insert('tbl_pengumuman', $data)) return TRUE;
@@ -27,6 +28,7 @@ class Pengumuman_model extends CI_Model
         $data = [
             'judul' => $this->input->post('judul'),
             'isi_pengumuman' => $this->input->post('isi_pengumuman'),
+            'tanggal' => $this->input->post('tanggal'),
         ];
 
         if ($this->db->update('tbl_pengumuman', $data, ['id_pengumuman' => $id_pengumuman])) return TRUE;

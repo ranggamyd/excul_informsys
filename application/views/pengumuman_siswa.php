@@ -21,6 +21,7 @@
                             <h5 class="mb-0">
                                 <button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapse-<?= $p['id_pengumuman'] ?>" aria-expanded="<?= $key === 0 ? 'true' : 'false' ?>" aria-controls="collapse-<?= $p['id_pengumuman'] ?>">
                                     <?= $p['judul'] ?>
+                                    <small class="text-muted float-right"><?= date('d M Y - H:i', strtotime($p['tanggal'])) ?></small>
                                 </button>
                             </h5>
                         </div>

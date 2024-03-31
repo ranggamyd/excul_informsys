@@ -14,6 +14,7 @@
                             <th class="text-center">No.</th>
                             <th>Judul Pengumuman</th>
                             <th>Isi Pengumuman</th>
+                            <th>Tanggal</th>
                             <th>Opsi</th>
                         </tr>
                     </thead>
@@ -25,6 +26,7 @@
                                 <td class="text-center"><?= $no++; ?></td>
                                 <td class=""><?= $item['judul'] ?></td>
                                 <td class=""><?= $item['isi_pengumuman'] ?></td>
+                                <td class="text-center"><?= date('d M Y - H:i', strtotime($item['tanggal'])) ?></td>
                                 <td class="text-center">
                                     <div class="btn-group" role="group" aria-label="Opsi">
                                         <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#edit_pengumuman-<?= $item['id_pengumuman'] ?>" data-toggle="tooltip" data-placement="right" title="Edit Pengumuman"><i class="fa fa-fw fa-edit"></i></a>
@@ -62,6 +64,11 @@
                     <div id='isi_pengumuman' class='invalid-feedback'>
                         <?= form_error('isi_pengumuman') ?>
                     </div>
+                    <label for="tanggal">Tanggal :</label>
+                    <input type="datetime-local" name="tanggal" value="<?= set_value('tanggal') ?>" class="form-control mb-3 <?= form_error('tanggal') ? 'is-invalid' : '' ?>" id="tanggal" required>
+                    <div id='tanggal' class='invalid-feedback'>
+                        <?= form_error('tanggal') ?>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Batal</button>
@@ -95,6 +102,11 @@
                         <textarea name="isi_pengumuman" class="form-control mb-3 <?= form_error('isi_pengumuman') ? 'is-invalid' : '' ?>" id="isi_pengumuman" required><?= set_value('isi_pengumuman', $item['isi_pengumuman']) ?></textarea>
                         <div id='isi_pengumuman' class='invalid-feedback'>
                             <?= form_error('isi_pengumuman') ?>
+                        </div>
+                        <label for="tanggal">Tanggal :</label>
+                        <input type="datetime-local" name="tanggal" value="<?= set_value('tanggal', $item['tanggal']) ?>" class="form-control mb-3 <?= form_error('tanggal') ? 'is-invalid' : '' ?>" id="tanggal" required>
+                        <div id='tanggal' class='invalid-feedback'>
+                            <?= form_error('tanggal') ?>
                         </div>
                     </div>
                     <div class="modal-footer">

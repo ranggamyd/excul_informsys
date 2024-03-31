@@ -78,28 +78,30 @@ class Siswa_model extends CI_Model
         $id_siswa = $this->input->post('id_siswa');
         $nis = $this->input->post('nis');
 
-        $config['upload_path']    = './assets/img/siswa';
-        $config['allowed_types']  = 'jpg|png|jpeg';
-        $config['max_size'] = 2048;
+        $fileName = $this->input->post('foto_lama');
 
-        $this->load->library('upload', $config);
+        if ($this->input->post('foto')) {
+            $config['upload_path']    = './assets/img/siswa';
+            $config['allowed_types']  = 'jpg|png|jpeg';
+            $config['max_size'] = 2048;
 
-        if ($this->upload->do_upload('foto')) {
-            $fileName = $this->upload->data('file_name');
+            $this->load->library('upload', $config);
 
-            $siswa = $this->db->get_where('tbl_siswa', ['id_siswa' => $id_siswa])->row();
-            unlink('./assets/img/siswa/' . $siswa->foto);
-        } else {
-            $fileName = $this->input->post('foto_lama');
+            if ($this->upload->do_upload('foto')) {
+                $fileName = $this->upload->data('file_name');
+
+                $siswa = $this->db->get_where('tbl_siswa', ['id_siswa' => $id_siswa])->row();
+                unlink('./assets/img/siswa/' . $siswa->foto);
+            }
+
+            $this->load->library('ciqrcode');
+
+            header("Content-Type: image/png");
+            $params['data'] = $nis;
+            $params['size'] = 9;
+            $params['savename'] = FCPATH . 'assets/img/siswa/qr/' . $nis . '.png';
+            $this->ciqrcode->generate($params);
         }
-
-        $this->load->library('ciqrcode');
-
-        header("Content-Type: image/png");
-        $params['data'] = $nis;
-        $params['size'] = 9;
-        $params['savename'] = FCPATH . 'assets/img/siswa/qr/' . $nis . '.png';
-        $this->ciqrcode->generate($params);
 
         $siswa = [
             'nama' => $this->input->post('nama'),
