@@ -136,6 +136,7 @@ $autoload['model'] = [
     'auth_model',
     'guru_model',
     'siswa_model',
+    'wali_model',
     'eskul_model',
     'pendaftar_model',
     'jadwal_model',

@@ -63,6 +63,12 @@
                         <span>Data Siswa</span>
                     </a>
                 </li>
+                <li class="nav-item <?= ($this->uri->segment(1) == 'wali') ? 'active' : ''; ?>">
+                    <a class="nav-link py-2" href="<?= base_url('wali') ?>">
+                        <i class="fa-fw fas fa-user-friends"></i>
+                        <span>Data Wali</span>
+                    </a>
+                </li>
                 <li class="nav-item <?= ($this->uri->segment(1) == 'eskul') ? 'active' : ''; ?>">
                     <a class="nav-link py-2" href="<?= base_url('eskul') ?>">
                         <i class="fa-fw fas fa-chart-line"></i>
